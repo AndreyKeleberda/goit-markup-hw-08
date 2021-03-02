@@ -1,0 +1,111 @@
+/* our-team */
+
+.our-team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  & h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+
+    display: block;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  & p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+  }
+
+  & img {
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 260px;
+  }
+
+  & .item {
+    text-align: center;
+    width: 270px;
+    background: var(--primary-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+
+.our-team-list {
+  display: flex;
+  padding-left: 0;
+
+  & .item {
+    justify-content: space-between;
+    width: 270px;
+  }
+
+  & .item + .item {
+    margin-left: 30px;
+  }
+
+  & h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+  }
+}
+
+.soc-list {
+  display: flex;
+  margin: 0px 32px 30px;
+  padding-left: 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover .soc-icon,
+  &:focus .soc-icon {
+    fill: var(--primary-bg-color);
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.soc-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}

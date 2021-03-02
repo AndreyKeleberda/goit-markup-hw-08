@@ -1,0 +1,56 @@
+/* mailing footer */
+
+.mailing-form {
+  position: relative;
+  padding: 12px 0 0 93px;
+  & h3 {
+    margin: 0 0 20px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-bg-color);
+  }
+}
+
+.mailing-block {
+  display: flex;
+}
+
+.input-mailing {
+  width: 358px;
+  height: 50px;
+  padding: 16px;
+
+  color: var(--primary-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: none;
+  background-color: var(--bg-color);
+}
+
+.mailing-button {
+  display: flex;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+
+  justify-content: space-evenly;
+  align-items: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+  border: transparent;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+}

@@ -1,0 +1,20 @@
+// utils
+@import "./utils/variables";
+// base
+@import "./base/common";
+@import "./base/container";
+//components
+@import "./components/logo-header";
+@import "./components/logo-footer";
+@import "./components/modal-window";
+@import "./components/mailing-footer";
+
+// layout
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/futures-list";
+@import "./layout/what-we-are-do";
+@import "./layout/our-team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/portfolio";

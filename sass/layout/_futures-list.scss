@@ -1,0 +1,76 @@
+.futures-list {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  & p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  & h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  & .item::before {
+    display: block;
+    height: 120px;
+    content: "";
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  & .icon-detales::before {
+    background-image: url("../images/antenna\ 1.svg");
+  }
+
+  & .icon-intime::before {
+    background-image: url("../images/clock\ 1.svg");
+  }
+
+  & .icon-plan::before {
+    background-image: url("../images/diagram\ 1.svg");
+  }
+
+  & .icon-tech::before {
+    background-image: url("../images/astronaut\ 1.svg");
+  }
+}
+
+.futures-flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+
+  & .item {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    margin-right: 30px;
+  }
+
+  & .item:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.futures-list-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.futures-list-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}

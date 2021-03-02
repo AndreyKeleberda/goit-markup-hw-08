@@ -1,0 +1,124 @@
+.header {
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+  padding-left: 0;
+
+  & .item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  /* Задаем падингом больше зону для ховер и фокус*/
+  & a {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  & .active {
+    color: var(--accent-color);
+
+    &::after {
+      content: " ";
+
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
+  }
+
+  & a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+  }
+  & a:hover,
+  & a:focus {
+    color: var(--accent-color);
+
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.contact-us {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  margin-left: 305px;
+
+  /* Задаем падингом больше зону для ховер и фокус*/
+  & a {
+    display: block;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    color: var(--primary-text-color);
+  }
+
+  & .item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  & a {
+    display: inline-flex;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    align-items: center;
+  }
+  & a:hover,
+  & a:focus {
+    color: var(--accent-color);
+
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  & a:hover .icon-letter,
+  & a:focus .icon-letter,
+  & a:hover .icon-smartphone,
+  & a:focus .icon-smartphone {
+    fill: currentColor;
+  }
+}
+
+.icon-letter,
+.icon-smartphone {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
