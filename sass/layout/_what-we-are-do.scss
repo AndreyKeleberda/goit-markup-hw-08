@@ -6,17 +6,29 @@
 
   & .item {
     justify-content: space-between;
+    & img {
+      display: block;
+      width: 370px;
+      height: 294px;
+    }
   }
 
   & .item + .item {
     margin-left: 30px;
   }
+}
 
-  & img {
-    display: block;
-    width: 370px;
-    height: 294px;
-  }
+.what-we-are-do {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .desctop-app,
@@ -52,18 +64,13 @@
 }
 
 .container-our-work {
+  display: flex;
+  flex-direction: column;
   margin: auto;
 }
 
-.what-we-are-do {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  margin-top: 0;
-  margin-bottom: 50px;
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .our-work {
+    display: none;
+  }
 }

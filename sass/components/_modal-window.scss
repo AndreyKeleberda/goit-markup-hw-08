@@ -1,4 +1,10 @@
 /* MODAL WINDOW */
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 
 .backdrop {
   position: fixed;
@@ -17,11 +23,15 @@
   top: 50%;
   left: 50%;
   transform: scale(1) translate(-50%, -50%);
-
-  width: 528px;
-  height: 581px;
+  width: 100%;
+  max-width: 450px;
+  max-height: 609px;
 
   background-color: var(--primary-bg-color);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .backdrop.is-hidden .modal {
@@ -176,17 +186,10 @@ textarea {
   margin-bottom: 20px;
 }
 
-.modal {
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
 .button-submit {
   position: absolute;
-  bottom: 40px;
-  left: 164px;
+  // bottom: 40px;
+  // left: 164px;
   width: 200px;
   height: 50px;
 
@@ -195,4 +198,14 @@ textarea {
   border-radius: 4px;
   background-color: var(--accent-color);
   border: none;
+  align-self: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .button-submit {
+    position: absolute;
+    margin-bottom: 40px;
+    left: 164px;
+    width: 200px;
+  }
 }
