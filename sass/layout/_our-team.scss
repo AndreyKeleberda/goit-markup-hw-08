@@ -150,3 +150,45 @@
     margin: 0px 74px 24px 74px;
   }
 }
+
+// Desctop
+
+@media screen and (min-width: 1200px) {
+  .our-team-container {
+    padding: 94px 0px;
+  }
+
+  .our-team {
+    & h2 {
+      padding-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.16;
+      margin-bottom: 0px;
+    }
+  }
+
+  .our-team-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    & .item {
+      width: 100%;
+      max-width: 270px;
+      max-height: 428px;
+      &:nth-child(-n + 2) {
+        margin-bottom: 0px;
+      }
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+    & h3 {
+      line-height: 1.19;
+    }
+    & p {
+      line-height: 1.19;
+    }
+  }
+  .soc-list {
+    margin: 0px 32px 30px 32px;
+  }
+}

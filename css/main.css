@@ -1002,6 +1002,46 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .our-team-container {
+    padding: 94px 0px;
+  }
+  .our-team h2 {
+    padding-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 0px;
+  }
+  .our-team-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .our-team-list .item {
+    width: 100%;
+    max-width: 270px;
+    max-height: 428px;
+  }
+  .our-team-list .item:nth-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+  .our-team-list .item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .our-team-list h3 {
+    line-height: 1.19;
+  }
+  .our-team-list p {
+    line-height: 1.19;
+  }
+  .soc-list {
+    margin: 0px 32px 30px 32px;
+  }
+}
+
 /*CLIENT*/
 .client {
   padding-top: 94px;
