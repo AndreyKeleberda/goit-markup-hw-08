@@ -1,33 +1,32 @@
-/*CLIENT*/
-
 .client {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .client-title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin: 0px auto 50px;
+  margin: 0px auto 30px;
 }
 
 .client-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .client-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 100%;
+  width: 210px;
   height: 90px;
 
   border: 1px solid #afb1b8;
@@ -39,6 +38,10 @@
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+
+.client-item:nth-child(-n + 4) {
+  margin-bottom: 30px;
 
   &:hover .client-icon,
   &:focus .client-icon {
@@ -47,10 +50,6 @@
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
-
-.client-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .client-icon {
