@@ -14,7 +14,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
   }
@@ -49,7 +49,6 @@
     width: 100%;
     max-width: 450px;
     text-align: center;
-    max-width: 460px;
     background: var(--primary-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -69,7 +68,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
   }
@@ -112,4 +111,42 @@
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+}
+
+// TABLET
+@media screen and (min-width: 768px) {
+  .our-team {
+    & h2 {
+      font-size: 28px;
+      line-height: 1.17;
+    }
+    & img {
+      width: 100%;
+      max-width: 354px;
+      max-height: 374px;
+    }
+  }
+  .our-team-list {
+    display: flex;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & .item {
+      width: 100%;
+      max-width: 354px;
+      max-height: 536px;
+      &:not(:last-child) {
+        margin-bottom: 0px;
+      }
+      &:nth-child(-n + 2) {
+        margin-bottom: 30px;
+      }
+      // &:nth-child(odd) {
+      //   margin-right: 30px;
+      // }
+    }
+  }
+  .soc-list {
+    margin: 0px 74px 24px 74px;
+  }
 }
