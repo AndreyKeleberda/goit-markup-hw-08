@@ -70,7 +70,7 @@ footer {
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 1.14;
     text-transform: uppercase;
     color: #ffffff;
@@ -144,5 +144,33 @@ footer {
     width: 50%;
     margin-top: 5px;
     margin-bottom: 0px;
+  }
+  .logo-footer {
+    display: block;
+    margin: 0px auto;
+  }
+}
+
+// desctop
+@media screen and (min-width: 1200px) {
+  .footer-block {
+    max-width: 1200px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .address-list {
+    text-align: start;
+  }
+  .logo-footer {
+    margin: 0 0 20px;
+  }
+  .contact-block {
+    margin-right: 70px;
+  }
+  .soc-block {
+    margin-top: 12px;
+    margin-right: 93px;
+    align-items: unset;
   }
 }

@@ -98,20 +98,29 @@ a {
 
 .logo-footer {
   width: 154px;
-  height: 28px;
+  height: 24px;
   left: 163px;
   top: 4908px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 
 .logo-footer-2 {
   color: var(--primary-bg-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    width: 145px;
+    height: 31px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 /* MODAL WINDOW */
@@ -392,11 +401,39 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
-  .mailing-block {
-    margin: 60px auto 0;
+  .mailing-form {
+    margin-top: 60px;
+  }
+  .mailing-form h3 {
+    text-align: center;
+    margin-top: 12px;
   }
   .input-mailing {
     width: 768px;
+  }
+  .mailing-block {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing-form {
+    margin-top: 0px;
+  }
+  .mailing-form h3 {
+    text-align: start;
+  }
+  .mailing-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-block {
+    width: 100%;
+  }
+  .input-mailing {
+    width: 358px;
+    margin-right: 12px;
   }
 }
 
@@ -1268,7 +1305,7 @@ footer {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 1.14;
   text-transform: uppercase;
   color: #ffffff;
@@ -1361,6 +1398,41 @@ footer {
     width: 50%;
     margin-top: 5px;
     margin-bottom: 0px;
+  }
+  .logo-footer {
+    display: block;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-block {
+    max-width: 1200px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .address-list {
+    text-align: start;
+  }
+  .logo-footer {
+    margin: 0 0 20px;
+  }
+  .contact-block {
+    margin-right: 70px;
+  }
+  .soc-block {
+    margin-top: 12px;
+    margin-right: 93px;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
   }
 }
 

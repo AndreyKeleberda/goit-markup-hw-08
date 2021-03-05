@@ -56,10 +56,37 @@
 
 //tablet
 @media screen and (min-width: 768px) {
-  .mailing-block {
-    margin: 60px auto 0;
+  .mailing-form {
+    margin-top: 60px;
+    & h3 {
+      text-align: center;
+      margin-top: 12px;
+    }
   }
   .input-mailing {
     width: 768px;
+  }
+  .mailing-block {
+    margin: 0 auto;
+  }
+}
+
+//desctop
+@media screen and (min-width: 1200px) {
+  .mailing-form {
+    margin-top: 0px;
+    & h3 {
+      text-align: start;
+    }
+  }
+  .mailing-block {
+    display: flex;
+  }
+  .contact-block {
+    width: 100%;
+  }
+  .input-mailing {
+    width: 358px;
+    margin-right: 12px;
   }
 }
