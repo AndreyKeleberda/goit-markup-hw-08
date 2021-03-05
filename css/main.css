@@ -335,6 +335,7 @@ textarea {
 
 /* mailing footer */
 .mailing-form {
+  display: block;
   position: relative;
 }
 
@@ -388,6 +389,15 @@ textarea {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
+}
+
+@media screen and (min-width: 768px) {
+  .mailing-block {
+    margin: 60px auto 0;
+  }
+  .input-mailing {
+    width: 768px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1329,6 +1339,29 @@ footer {
           transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 769px) {
+  .footer-block {
+    max-width: 768px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  .contact-block {
+    width: 50%;
+  }
+  .soc-block {
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
 }
 
 /* страница пртфолио */

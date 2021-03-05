@@ -127,3 +127,22 @@ footer {
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+//tablet
+
+@media screen and (min-width: 769px) {
+  .footer-block {
+    max-width: 768px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: unset;
+  }
+  .contact-block {
+    width: 50%;
+  }
+  .soc-block {
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+}

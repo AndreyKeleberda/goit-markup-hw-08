@@ -1,6 +1,7 @@
 /* mailing footer */
 
 .mailing-form {
+  display: block;
   position: relative;
   & h3 {
     margin: 0 0 20px;
@@ -51,4 +52,14 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
+}
+
+//tablet
+@media screen and (min-width: 768px) {
+  .mailing-block {
+    margin: 60px auto 0;
+  }
+  .input-mailing {
+    width: 768px;
+  }
 }
