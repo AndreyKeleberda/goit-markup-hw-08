@@ -1,3 +1,5 @@
+//mobile
+
 .client {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -21,11 +23,17 @@
   justify-content: space-between;
 }
 
+.client-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .client-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+
   width: 210px;
   height: 90px;
 
@@ -57,4 +65,22 @@
 
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+//tablet
+@media screen and (min-width: 768px) {
+  .client-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .client-item {
+    width: 100%;
+    max-width: 226px;
+    max-height: 90px;
+  }
+  .client-link {
+    width: 100%;
+    max-width: 226px;
+    max-height: 90px;
+  }
 }
