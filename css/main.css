@@ -497,6 +497,7 @@ textarea {
   padding: 48px 40px;
   background-color: var(--primary-bg-color);
   border: none;
+  z-index: 1;
 }
 
 .mobile-menu.is-open {
@@ -618,8 +619,7 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  height: 80px;
 }
 
 @media screen and (min-width: 768px) {
