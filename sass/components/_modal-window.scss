@@ -17,7 +17,7 @@
   transform: scale(1) translate(-50%, -50%);
   width: 100%;
   max-width: 450px;
-  height: 95%;
+  height: 90%;
   max-height: 609px;
   overflow: scroll;
   background-color: var(--primary-bg-color);
@@ -58,7 +58,7 @@
   pointer-events: none;
 }
 
-form {
+.modal-form {
   padding: 40px;
   display: flex;
   flex-direction: column;
